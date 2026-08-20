@@ -1,21 +1,18 @@
-Polaroid Booth
+**Polaroid Booth**
 
-A fun, browser-based photo booth that captures pictures from your webcam and instantly turns them into realistic Polaroid-style snapshots — complete with the classic white border, a tilted (rotated) frame, subtle shadows, and a vintage feel. Built entirely with HTML, CSS, and vanilla JavaScript — no frameworks, no backend, no dependencies.
 
-✨ Features
+A fun, browser-based photo booth that captures pictures from your webcam and instantly turns them into realistic Polaroid-style snapshots — complete with the classic white border, a tilted (rotated) frame, subtle shadows, and a vintage feel. Built entirely with HTML, CSS, and vanilla JavaScript!
+
+
+**Features**
+
 🎥 Live webcam preview using the getUserMedia API
 📷 One-click photo capture rendered onto an HTML5 <canvas>
 🖼️ Instant Polaroid framing — white border, bottom caption strip, and drop shadow
 🔄 Randomized rotation effect so each captured photo lands on the "table" at a slightly different angle, just like tossing real polaroids into a pile
-🎞️ Countdown timer / shutter animation before the photo is taken (optional flash effect)
-🎨 Filter options (e.g., black & white, sepia/vintage, warm tone) applied via CSS filters or canvas pixel manipulation
-📝 Editable captions — type a little note under each polaroid, just like writing on the white strip with a marker
-💾 Download / Save captured polaroids as PNG images
-🗑️ Delete / retake individual photos
-📱 Responsive design — works on desktop and mobile browsers with camera access
-🖱️ Drag-and-drop rearranging of polaroids on the "corkboard" (optional feature, if implemented)
-⚡ Zero dependencies — pure HTML/CSS/JS, runs entirely client-side
-🛠️ Tech Stack
+
+**Tech Stack**
+
 Technology	Purpose
 HTML5	Page structure, <video> element for camera feed, <canvas> for capturing frames
 CSS3	Polaroid card styling, box-shadows, borders, transform: rotate() for the scattered-photo look, animations/transitions
@@ -36,8 +33,12 @@ polaroid-booth/
 │   └── fonts/                # (optional) handwriting-style font for captions
 │
 └── README.md            # You're reading it!
-🚀 Getting Started
+
+
+
+**Getting Started**
 Prerequisites
+
 A modern web browser (Chrome, Firefox, Edge, or Safari) that supports the getUserMedia API
 A working webcam
 (Optional) A local development server, since some browsers restrict camera access on file:// URLs
@@ -59,8 +60,8 @@ Option C — Node.js http-server
 bash
    npx http-server .
 Allow camera access when your browser prompts you.
-Click the capture button 📸 and watch your photo transform into a polaroid!
-🎮 How to Use
+Click the snap button 📸 and watch your photo transform into a polaroid!
+**How to Use**
 Open the app in your browser and grant camera permissions.
 Position yourself in the live preview window.
 Click the "Capture" / shutter button.
@@ -114,17 +115,7 @@ css
   transform: rotate(0deg) scale(1.05);
   z-index: 10;
 }
-🎨 Customization
 
-You can easily tweak the look and feel:
-
-What to change	Where
-Rotation range (e.g., -8° to 8°)	script.js → the randomAngle calculation
-Polaroid border thickness/color	style.css → .polaroid padding & background
-Filters (B&W, sepia, vintage)	style.css → filter: grayscale(1); or filter: sepia(0.6);
-Caption font (handwriting style)	style.css → @font-face + .caption font-family
-Countdown duration	script.js → countdown timer logic
-Shutter sound	assets/shutter-sound.mp3 + Audio object in script.js
 🌐 Browser Compatibility
 Browser	Supported
 Chrome	✅
@@ -135,20 +126,14 @@ Mobile browsers	✅ (camera permissions vary by device)
 
 ⚠️ Camera access requires a secure context — either https:// or localhost. It will not work over plain http:// on most modern browsers.
 
-🐞 Known Issues / Limitations
+**Limitations**
 Camera access must be explicitly granted by the user each session (unless permissions are remembered by the browser).
 Some mobile browsers may default to the front-facing camera; switching cameras may require additional facingMode constraints.
-Downloaded images are limited to the resolution of the webcam feed.
-No persistent storage — refreshing the page clears all captured polaroids (unless localStorage or IndexedDB support is added).
-🗺️ Roadmap / Future Improvements
- Add localStorage support to persist polaroids between sessions
- Add drag-and-drop rearranging of polaroids on a virtual corkboard
- Add more filter presets (retro, faded, high-contrast)
- Add ability to switch between front/rear camera on mobile
- Add print-friendly layout for exporting a full "polaroid sheet"
- Add sound toggle and customizable shutter sound
- Add sharing options (copy to clipboard, share via Web Share API)
-🤝 Contributing
+
+No persistent storage — refreshing the page clears all captured polaroids.
+
+ 
+**Contributing**
 
 Contributions are welcome! If you'd like to improve Polaroid Booth:
 
@@ -162,10 +147,7 @@ Open a Pull Request
 
 This project is open source and available under the MIT License. Feel free to use, modify, and distribute it for personal or commercial projects.
 
-🙌 Credits
+**Credits**
 
-Built with plain HTML, CSS, and JavaScript — no libraries, no frameworks, just the browser's native Web APIs (getUserMedia, Canvas, and CSS transform) doing all the heavy lifting.
+Built with plain HTML, CSS, and JavaScript
 
-Inspired by the timeless charm of instant film photography. 🎞️
-
-Enjoy snapping memories, one polaroid at a time! 📸✨
