@@ -5,7 +5,7 @@
 }
 
 body{
-    background: rgb(142, 187, 255);
+    background: url('1.png') center / cover no-repeat;
     font-family: "Caveat", cursive;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ h1{
     text-shadow: 2px 2px 0 #3a3a3a;
 }
 .camera{
-    background: rgb(199, 195, 195);
+    background: rgb(58, 47, 44);
     border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -42,7 +42,8 @@ video{
 }
 
 .snap-btn{
-    background: #e94560;
+    font-family: 'Caveat',cursive;
+    background: #1f1b1b;
     color: white;
     border: none;
     border-radius: 50%;
@@ -51,7 +52,7 @@ video{
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 0 #b32d44;
+    box-shadow: 0 4px 0 #000000;
     transition: 0.1s ease;
     
 }
@@ -59,6 +60,9 @@ video{
 .snap-btn:active{
     transform: translateY(4px);
     box-shadow: none;
+}
+.snap-btn:hover{
+    background: #862538;
 }
 .gallery{
     display: flex;
@@ -111,7 +115,7 @@ video{
 
 }
 .clear-btn{
-    background: #53354a;
+    background: #121212;
     color: #f5e6d3;
     border: none;
     padding: 0.5rem 1.5rem;
@@ -124,5 +128,5 @@ video{
 
 }
 .clear-btn:hover{
-    background: #903749;
+    background: #862538;
 }
