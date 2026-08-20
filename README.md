@@ -3,6 +3,23 @@
 
 A fun, browser-based photo booth that captures pictures from your webcam and instantly turns them into realistic Polaroid-style snapshots — complete with the classic white border, a tilted (rotated) frame, subtle shadows, and a vintage feel. Built entirely with HTML, CSS, and vanilla JavaScript!
 
+**WORKING**
+
+
+Screen when taking photos:
+
+
+<img width="958" height="337" alt="og wirh" src="https://github.com/user-attachments/assets/e905b899-0040-41df-9815-1404564a4b06" />
+
+Asking user for camera:
+
+<img width="960" height="494" alt="ask for cam" src="https://github.com/user-attachments/assets/5445fd9b-9597-4b88-a311-86867319a63a" />
+
+
+Screen when no cam is available:
+
+<img width="958" height="437" alt="no cam" src="https://github.com/user-attachments/assets/cbc64fec-ca3a-4554-b02e-76e923b2e3ad" />
+
 
 **Features**
 
