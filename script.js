@@ -19,7 +19,7 @@
  ctx.fillStyle = '#e94560';
  ctx.font = '20px Caveat';
  ctx.textAlign = 'center';
- ctx.fillText('📷 No camera?', 160, 120);
+ ctx.fillText('No camera?', 160, 120);
  video.srcObject = null;
  video.poster = canvas.toDataURL();
  // We'll use a fallback capture method
@@ -86,7 +86,7 @@
 
  // --- Clear ---
  document.getElementById('clearBtn').addEventListener('click', () => {
- gallery.innerHTML = '<div class="empty-msg">✨ Snap a photo to start your wall!</div>';
+ gallery.innerHTML = '<div class="empty-msg">Take a photo!</div>';
  });
 
  // --- Keyboard shortcut: press Space to snap ---
