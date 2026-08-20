@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(142, 187, 255);
+    font-family: "Caveat", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+}
+h1{
+    color: aliceblue;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 0 #3a3a3a;
+}
+.camera{
+    background: rgb(199, 195, 195);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+video{
+    border-radius: 12px;
+    width: 320px;
+    height: 240px;
+    background: #0f0f1a;
+    object-fit: cover;
+    border: 3px solid #e8d5c4;
+}
+
+.snap-btn{
+    background: #e94560;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #b32d44;
+    transition: 0.1s ease;
+    
+}
+
+.snap-btn:active{
+    transform: translateY(4px);
+    box-shadow: none;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top : 2.5rem;
+    padding: 1rem;
+    max-width: 900px;
+}
+.polaroid{
+    background: #fef9f0;
+    padding: 12px 12px 35px 12px;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.4);
+    transform: rotate(var(--rot, 0deg));
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px;
+
+}
+.polaroid:hover{
+    transform: rotate(0deg) scale(1.05);
+}
+.polaroid img{
+    width: 180px;
+    height: 135px;
+    object-fit: cover;
+    display: block;
+    border-radius: 1px;
+
+}
+
+.polaroid.caption {
+    font-family: 'Caveat', cursive;
+    font-size: 1.1rem;
+    color: #3a3a3a;
+    margin-top: 8px;
+    text-align: center;
+    width:100%;
+    word-wrap: break-word;
+
+}
+.empty-msg{
+    color: #8888aa;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    opacity: 0.6;
+
+}
+.clear-btn{
+    background: #53354a;
+    color: #f5e6d3;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: 0.2s;
+
+}
+.clear-btn:hover{
+    background: #903749;
+}
